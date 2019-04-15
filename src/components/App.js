@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
 import Title from './Title';
+import Jokes from './Jokes';
+
 class App extends React.Component {
 		
 	state = {displayBio: false}
@@ -15,7 +17,7 @@ class App extends React.Component {
     	<div className="App">
        	<h1>Hello</h1>
        	<p>My name is Rafał.</p>
-				 <Title />
+		<Title /> 
        	{
         	this.state.displayBio ? (
         	<div>
@@ -30,7 +32,8 @@ class App extends React.Component {
     	}<hr />
 		<Projects />
 		<hr />
-		<SocialProfiles />   
+		<SocialProfiles />
+		<Jokes />   
     	</div>
     	);
   	}
