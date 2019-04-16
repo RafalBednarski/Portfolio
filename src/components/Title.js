@@ -16,8 +16,8 @@ class Title extends React. Component {
     }
 
     componentWillUnmount() {//clear all intervals
-        clearInterval(this.titleInterval);
-        clearInterval(this.timeout);
+        // clearInterval(this.titleInterval);
+        // clearInterval(this.timeout);
     }
 
     animateTitles = () => {
